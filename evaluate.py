@@ -18,7 +18,7 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 		plt.text(j, i, format(cm[i, j], fmt), horizontalalignment="center", color="white" if cm[i, j] > thresh else "black")
 
 	plt.tight_layout()
-	plt.ylim(-0.5,3.5)
+	plt.ylim(-0.5,len(classes)+0.5)
 	plt.ylabel('True label')
 	plt.xlabel('Predicted label')
 
